@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('back.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            width: 60%;
+            height: 100%;
+            margin: 0 auto;
+            background-color: rgba(49, 49, 49, 0.7);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden; /* اسکرول در صورت نیاز */
+        }
+        .slider {
+            position: relative;
+            overflow: hidden;
+            height: 300px; /* ارتفاع ثابت برای اسلایدر */
+        }
+        .slider img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* حفظ نسبت ابعاد */
+            display: none; /* پنهان کردن همه تصاویر به جز اولی */
+        }
+        .slider img.active {
+            display: block; /* فقط تصویر فعال نمایش داده می‌شود */
+        }
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+            border-radius: 5px;
+        }
+        .arrow.left {
+            left: 10px;
+        }
+        .arrow.right {
+            right: 10px;
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        p {
+            color: white;
+            margin-top: 20px;
+        }
+        .text {
+            white-space: pre-line;
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!div class="slider">
+            <img src="back.jpg" alt="Image 1" class="active" onclick="openLightbox(this.src)">
+            <img src="api.jpg" alt="Image 2" onclick="openLightbox(this.src)">
+            <img src="back.jpg" alt="Image 3" onclick="openLightbox(this.src)">
+            <img src="back.jpg" alt="Image 4" onclick="openLightbox(this.src)">
+            
+            <button class="arrow left" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="arrow right" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+		<p class="text">
+فروش سلف مراقب باشید نفروشه
+
+t.me/+989396501229
+
+t.me/+989225054528
+
+اکانت فیک طرف
+<a href="tg://openmessage?user_id=7374352774" style="color: white; text-decoration: underline;">tg://openmessage?user_id=7374352774</a>
+		</p>
+    </div>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Large Image">
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slider img');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) {
+                    slide.classList.add('active');
+                }
+            });
+        }
+
+        function changeSlide(direction) {
+            currentSlide += direction;
+            if (currentSlide < 0) {
+                currentSlide = slides.length - 1; // برگرد به آخرین تصویر
+            } else if (currentSlide >= slides.length) {
+                currentSlide = 0; // برگرد به اولین تصویر
+            }
+            showSlide(currentSlide);
+        }
+
+        function openLightbox(src) {
+            const lightboxImage = document.getElementById('lightbox-img');
+            lightboxImage.src = src;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
