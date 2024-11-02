@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
     <title>سلف فروش</title>
     <style>
         * {
@@ -21,13 +18,13 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-image: url('back.jpg');
+            background-image: url('https://raw.githubusercontent.com/amirwolf5122/amirwolf5122.github.io/master/ban/back.jpg');
             background-size: cover;
             background-position: center;
         }
         .container {
-            width: 60%;
-            height: 100%;
+            width: 90%; /* افزایش عرض به 90% برای بهتر دیده شدن در گوشی‌ها */
+            max-width: 600px; /* حداکثر عرض برای دسکتاپ */
             margin: 0 auto;
             background-color: rgba(49, 49, 49, 0.7);
             padding: 20px;
@@ -38,7 +35,7 @@
         .slider {
             position: relative;
             overflow: hidden;
-            height: 300px;
+            height: 300px; /* ارتفاع ثابت برای اسلاید */
         }
         .slider img {
             width: 100%;
@@ -86,35 +83,45 @@
         p {
             color: white;
             margin-top: 20px;
-			white-space: pre-line;
+            white-space: pre-line; /* حفظ فواصل خط */
         }
-        @media (min-width: 768px) {
-    /* این استایل‌ها برای نمایش در دستگاه‌های با عرض 768 پیکسل یا بیشتر اعمال می‌شود */
-    body {
-        font-size: 16px; /* تغییر اندازه فونت */
-    }
-}
+        a {
+            color: white; 
+            text-decoration: underline;
+        }
+
+        /* Media Queries برای نمایش بهتر در دستگاه‌های کوچک‌تر */
+        @media (max-width: 600px) {
+            .slider {
+                height: 200px; /* کاهش ارتفاع اسلاید برای گوشی‌ها */
+            }
+            .arrow {
+                padding: 8px; /* کاهش اندازه دکمه‌های ناوبری */
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="slider">
-            <img src="back.jpg" alt="Image 1" class="active" onclick="openLightbox(this.src)">
+            <img src="https://raw.githubusercontent.com/amirwolf5122/amirwolf5122.github.io/master/ban/back.jpg" alt="Image 1" class="active" onclick="openLightbox(this.src)">
+            <img src="image2.jpg" alt="Image 2" onclick="openLightbox(this.src)">
+            <img src="image3.jpg" alt="Image 3" onclick="openLightbox(this.src)">
             
             <button class="arrow left" onclick="changeSlide(-1)">&#10094;</button>
             <button class="arrow right" onclick="changeSlide(1)">&#10095;</button>
         </div>
-		<p>
+        <p>
 فروش سلف مراقب باشید نفروشه
 
-<a href="https://t.me/+989396501229" style="color: white; text-decoration: underline;">+989225054528</a>
+<a href="https://t.me/+989396501229">+989225054528</a>
 
-<a href="https://t.me/+989225054528" style="color: white; text-decoration: underline;">+989225054528</a>
+<a href="https://t.me/+989225054528">+989225054528</a>
 
 اکانت فیک طرف
 
-<a href="tg://openmessage?user_id=7374352774" style="color: white; text-decoration: underline;">tg://openmessage?user_id=7374352774</a>
-		</p>
+<a href="tg://openmessage?user_id=7374352774">tg://openmessage?user_id=7374352774</a>
+        </p>
     </div>
 
     <div class="lightbox" id="lightbox" onclick="closeLightbox()">
