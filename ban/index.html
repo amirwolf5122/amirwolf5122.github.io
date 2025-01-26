@@ -33,6 +33,10 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             overflow: hidden;
             margin-bottom: 30px; /* فاصله بین کادرها */
+            display: none; /* همه کادرها به طور پیش‌فرض مخفی هستند */
+        }
+        .container.active {
+            display: block; /* فقط کادر فعال نمایش داده می‌شود */
         }
         .slider {
             position: relative;
@@ -112,7 +116,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container" data-line="1">
         <p>
 
 فروش سلف مراقب باشید نفروشه
@@ -123,7 +127,7 @@
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="2">
         <p>
 
 فروش سلف مراقب باشید نفروشه
@@ -135,7 +139,7 @@
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="3">
         <p>
 
 فروش سلف نکرده ولی به همتون که این سلفو دارین ناموصی داده ( فوش و بمبر ازاد )
@@ -143,7 +147,7 @@ http://<a href="https://t.me/+989902032889">t.me/+989902032889</a><span class="p
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="4">
         <p>
 
 فروش سلف 
@@ -153,7 +157,7 @@ http://<a href="https://t.me/+989902032889">t.me/+989902032889</a><span class="p
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="5">
         <p>
 
 تبر کردن دکی کار خوبی نیست پسر خوب یه چنل برای من ارزشی نداره
@@ -162,7 +166,7 @@ http://<a href="https://t.me/+989902032889">t.me/+989902032889</a><span class="p
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="6">
         <p>
 
 شماره 
@@ -177,7 +181,7 @@ http://<a href="https://t.me/+989902032889">t.me/+989902032889</a><span class="p
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="7">
         <p>
 
 شماره 
@@ -191,7 +195,7 @@ http://<a href="https://t.me/+989902032889">t.me/+989902032889</a><span class="p
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="8">
         <p>
 
 فروش سلف
@@ -201,7 +205,7 @@ t.me/+989338098152
 مراقب باشید نفروشه بهتون<span class="pin-icon">📌</span>
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="9">
         <div class="slider" data-slider-id="1">
             <img src="9/photo_2024-11-03_15-09-55.jpg" alt="photo_2024-11-03_15-09-55.jpg" class="active" onclick="openLightbox(this)">
             <img src="9/photo_2024-11-03_15-10-00.jpg" alt="photo_2024-11-03_15-10-00.jpg" onclick="openLightbox(this)">
@@ -238,7 +242,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="10">
         <p>
 
 <a href="https://t.me/+989035094609">t.me/+989035094609</a>
@@ -247,7 +251,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="11">
         <p>
 
 <a href="https://t.me/+989961936507">t.me/+989961936507</a>
@@ -261,7 +265,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="12">
         <div class="slider" data-slider-id="2">
             <img src="12/photo_2024-11-03_15-08-27.jpg" alt="photo_2024-11-03_15-08-27.jpg" class="active" onclick="openLightbox(this)">
             <img src="12/photo_2024-11-03_15-08-32.jpg" alt="photo_2024-11-03_15-08-32.jpg" onclick="openLightbox(this)">
@@ -295,7 +299,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="13">
         <p>
 
 <a href="https://t.me/ARIAONLINE1">t.me/ARIAONLINE1</a>
@@ -365,7 +369,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="14">
         <p>
 
 فروش سلف
@@ -385,7 +389,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="15">
         <div class="slider" data-slider-id="3">
             <img src="15/photo_2024-11-03_15-06-40.jpg" alt="photo_2024-11-03_15-06-40.jpg" class="active" onclick="openLightbox(this)">
             <img src="https://raw.githubusercontent.com/amirwolf5122/amirwolf5122.github.io/master/ban/back.jpg" alt="photo_2024-11-03_15-06-40.jpg" onclick="openLightbox(this)">
@@ -437,7 +441,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="16">
         <p>
 
 <a href="https://t.me/+989961936507">t.me/+989961936507</a>
@@ -452,7 +456,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="17">
         <p>
 
 اینو یکم دیگه بگاییدش مخصوصا  <a href="https://t.me/+989167370731">t.me/+989167370731</a>
@@ -468,7 +472,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="18">
         <p>
 
 فروش سلف
@@ -490,7 +494,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="19">
          <p>
 
 خوب عزیزان 
@@ -512,7 +516,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="20">
         <div class="slider" data-slider-id="4">
             <img src="20/photo_2024-11-03_15-04-46.jpg" alt="photo_2024-11-03_15-06-40.jpg" class="active" onclick="openLightbox(this)">
             <img src="https://raw.githubusercontent.com/amirwolf5122/amirwolf5122.github.io/master/ban/back.jpg" alt="photo_2024-11-03_15-06-40.jpg" onclick="openLightbox(this)">
@@ -536,7 +540,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="21">
         <div class="slider" data-slider-id="5">
             <img src="21/photo_1_2024-11-03_15-03-22.jpg" alt="photo_1_2024-11-03_15-03-22.jpg" class="active" onclick="openLightbox(this)">
             <img src="21/photo_2_2024-11-03_15-03-22.jpg" alt="photo_2_2024-11-03_15-03-22.jpg" onclick="openLightbox(this)">
@@ -591,7 +595,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="22">
         <p>
 
 <a href="https://t.me/mohamad_01_online">t.me/mohamad_01_online</a>
@@ -615,7 +619,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="23">
         <p>
 
 فروش سلف 
@@ -626,7 +630,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="24">
         <div class="slider" data-slider-id="6">
             <img src="24/photo_2024-11-03_15-00-58.jpg" alt="photo_2024-11-03_15-00-58.jpg" class="active" onclick="openLightbox(this)">
             <img src="24/photo_2024-11-03_15-01-05.jpg" alt="photo_2024-11-03_15-01-05.jpg" class="active" onclick="openLightbox(this)">
@@ -652,7 +656,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="25">
         <div class="slider" data-slider-id="7">
             <img src="25/photo_2024-11-03_15-00-02.jpg" alt="photo_2024-11-03_15-00-02.jpg" class="active" onclick="openLightbox(this)">
 			<img src="https://raw.githubusercontent.com/amirwolf5122/amirwolf5122.github.io/master/ban/back.jpg" alt="photo_2024-11-03_15-06-40.jpg" onclick="openLightbox(this)">
@@ -674,7 +678,7 @@ t.me/+989338098152
 		
     </div>
 
-    <div class="container">
+    <div class="container" data-line="26">
 
         <p>
 	
@@ -687,7 +691,7 @@ t.me/+989338098152
 فروش سلف مراقب باشید نفروشه بهتون<span class="pin-icon">📌</span>
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="27">
 
         <p>
 
@@ -701,7 +705,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="28">
 
         <p>
 
@@ -726,7 +730,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="29">
         <p>
 
 خوب دوستان 
@@ -742,7 +746,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="30">
         <p>
 
 مادر اینو بگایید
@@ -756,7 +760,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="31">
         <p>
 
 <a href="https://t.me/+989360926578">t.me/+989360926578</a>
@@ -776,7 +780,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="32">
         <div class="slider" data-slider-id="8">
             <img src="32/1.jpg" alt="1.jpg" class="active" onclick="openLightbox(this)">
             <video src="32/1.mp4" controls onclick="openLightbox(this)"></video>
@@ -794,7 +798,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="33">
         <p>
 
 <a href="https://t.me/+989057518743">t.me/+989057518743</a>
@@ -811,7 +815,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="34">
         <div class="slider" data-slider-id="9">
             <img src="34/1.jpg" alt="photo_2024-11-03_15-00-02.jpg" class="active" onclick="openLightbox(this)">
 			<img src="https://raw.githubusercontent.com/amirwolf5122/amirwolf5122.github.io/master/ban/back.jpg" alt="photo_2024-11-03_15-06-40.jpg" onclick="openLightbox(this)">
@@ -875,7 +879,7 @@ t.me/+989338098152
         </p>
 		
     </div>
-    <div class="container">
+    <div class="container" data-line="35">
         <p>
 
 کص ننش بزارین یکم میخارید
@@ -896,7 +900,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="36">
         <div class="slider" data-slider-id="10">
             <img src="36/1.jpg" alt="photo_2024-11-03_14-34-57.jpg" class="active" onclick="openLightbox(this)">
 			<img src="https://raw.githubusercontent.com/amirwolf5122/amirwolf5122.github.io/master/ban/back.jpg" alt="photo_2024-11-03_15-06-40.jpg" onclick="openLightbox(this)">
@@ -942,7 +946,7 @@ t.me/+989338098152
         </p>
 		
     </div>
-    <div class="container">
+    <div class="container" data-line="37">
         <p>
 
 <a href="https://t.me/+989371967635">t.me/+989371967635</a>
@@ -957,7 +961,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="38">
 <p>
 
 فروش سلف
@@ -980,7 +984,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="39">
 <p>
 
 <a href="https://t.me/+989168219232">t.me/+989168219232</a>
@@ -1031,7 +1035,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="40">
         <div class="slider" data-slider-id="11">
             <img src="40/1.jpg" alt="photo_2024-11-03_14-34-57.jpg" class="active" onclick="openLightbox(this)">
 			<img src="https://raw.githubusercontent.com/amirwolf5122/amirwolf5122.github.io/master/ban/back.jpg" alt="photo_2024-11-03_15-06-40.jpg" onclick="openLightbox(this)">
@@ -1052,7 +1056,7 @@ t.me/+989338098152
         </p>
 		
     </div>
-    <div class="container">
+    <div class="container" data-line="41">
 <p>
 
 فروش سلف مراقب باشید نفروشه
@@ -1070,7 +1074,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="42">
         <p>
 <a href="https://t.me/Aliyarahmadi85">@Aliyarahmadi85</a>
 <a href="https://t.me/Gharmmarm">@Gharmmarm</a>
@@ -1086,7 +1090,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="43">
         <p>
 
 فروش سلف مراقب باشید نفروشه
@@ -1096,7 +1100,7 @@ t.me/+989338098152
 <a href="tg://openmessage?user_id=6619535419">tg://openmessage?user_id=6619535419</a><span class="pin-icon">📌</span>
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="44">
         <p>
 <a href="https://t.me/+989212033915">+989212033915</a>
 فروش سلف مراقب باشید نفروشه
@@ -1104,7 +1108,7 @@ t.me/+989338098152
 
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="45">
         <div class="slider" data-slider-id="12">
             <img src="46/1.jpg" alt="photo_2024-11-03_14-34-57.jpg" class="active" onclick="openLightbox(this)">
 			<img src="46/2.jpg" alt="photo_2024-11-03_15-06-40.jpg" onclick="openLightbox(this)">
@@ -1124,7 +1128,7 @@ t.me/+989338098152
         <img id="lightbox-img" src="" alt="Large Image">
         <video id="lightbox-video" controls></video>
     </div>
-    <div class="container">
+    <div class="container" data-line="46">
         <p>
 به دلیل فحش به ایهان
 +989232209478
@@ -1135,7 +1139,7 @@ t.me/+989338098152
         <img id="lightbox-img" src="" alt="Large Image">
         <video id="lightbox-video" controls></video>
     </div>
-    <div class="container">
+    <div class="container" data-line="47">
         <div class="slider" data-slider-id="13">
             <img src="48/photo_10_2024-11-06_20-03-22.jpg" alt="photo_10_2024-11-06_20-03-22.jpg"  class="active" onclick="openLightbox(this)">
             <img src="48/photo_11_2024-11-06_20-03-22.jpg" alt="photo_11_2024-11-06_20-03-22.jpg" onclick="openLightbox(this)">
@@ -1172,13 +1176,13 @@ t.me/+989338098152
         <img id="lightbox-img" src="" alt="Large Image">
         <video id="lightbox-video" controls></video>
     </div>
-        <div class="container">
+        <div class="container" data-line="48">
         <p>
 به دلیل فحش شمارش گذاشته شد
 <a href="https://t.me/+989368415945">t.me/+989368415945</a><span class="pin-icon">📌</span>
         </p>
     </div>
-        <div class="container">
+        <div class="container" data-line="49">
         <p>
 به دلیل فحش شمارش گذاشته شد
 
@@ -1186,7 +1190,7 @@ t.me/+989338098152
 <a href="https://t.me/+989036162252">t.me/+989036162252</a><span class="pin-icon">📌</span>
         </p>
 	</div>
-        <div class="container">
+        <div class="container" data-line="50">
         <p>
 به دلیل فحش شمارش گذاشته شد
 <a href="https://t.me/proxy123452">t.me/proxy123452</a>
@@ -1195,7 +1199,7 @@ t.me/+989338098152
 <a href="https://t.me/+989360113554">t.me/+989360113554</a><span class="pin-icon">📌</span>
         </p>
 	</div>
-    <div class="container">
+    <div class="container" data-line="51">
         <p>
 به دلیل فحش شمارش گذاشته شد
 <a href="https://t.me/seywan_captain">t.me/seywan_captain</a>
@@ -1203,7 +1207,7 @@ t.me/+989338098152
 <a href="tg://openmessage?user_id=5982450852">tg://openmessage?user_id=5982450852</a><span class="pin-icon">📌</span>
         </p>
 	</div>
-    <div class="container">
+    <div class="container" data-line="52">
         <div class="slider" data-slider-id="14">
             <img src="50/photo_2024-12-08_11-54-59.jpg" alt="photo_2024-12-08_11-54-59.jpg" class="active" onclick="openLightbox(this)">
             <img src="https://raw.githubusercontent.com/amirwolf5122/amirwolf5122.github.io/master/ban/back.jpg" alt="photo_2024-11-03_15-06-40.jpg" onclick="openLightbox(this)">
@@ -1229,7 +1233,7 @@ t.me/+989338098152
         <a href="tg://openmessage?user_id=5982450852">tg://openmessage?user_id=8042406562</a><span class="pin-icon">📌</span>
         </p>
     </div>
-    <div class="container">
+    <div class="container" data-line="53">
         <div class="slider" data-slider-id="15">
             <img src="51/photo_1_2024-12-19_14-37-46.jpg" alt="photo_1_2024-12-19_14-37-46.jpg"  class="active" onclick="openLightbox(this)">
             <img src="51/photo_3_2024-12-19_14-37-46.jpg" alt="photo_3_2024-12-19_14-37-46.jpg" onclick="openLightbox(this)">
@@ -1260,7 +1264,7 @@ t.me/+989338098152
         <img id="lightbox-img" src="" alt="Large Image">
         <video id="lightbox-video" controls></video>
     </div>
-    <div class="container">
+    <div class="container" data-line="54">
         <p>
 به دلیل فحش شمارش گذاشته شد
 اسم پسر : مبین 
@@ -1282,7 +1286,7 @@ t.me/+989338098152
 <a href="tg://openmessage?user_id=7422452407">tg://openmessage?user_id=7422452407</a><span class="pin-icon">📌</span>
 	</p>
 	</div>
-    <div class="container">
+    <div class="container" data-line="55">
         <p>
 به دلیل فحش شمارش گذاشته شد
 شماره: 9363523812
@@ -1297,7 +1301,7 @@ t.me/+989338098152
 <a href="tg://openmessage?user_id=7165042003">tg://openmessage?user_id=7165042003</a><span class="pin-icon">📌</span>
         </p>
 	</div>
-    <div class="container">
+    <div class="container" data-line="56">
         <p>
 به دلیل فحش شمارش گذاشته شد
 شماره: 9383435763
@@ -1311,8 +1315,7 @@ t.me/+989338098152
 <a href="tg://openmessage?user_id=7426153144">tg://openmessage?user_id=7426153144</a><span class="pin-icon">📌</span>
         </p>
     </div>
-    <script>
-    <div class="container">
+    <div class="container" data-line="57">
         <p>
 به دلیل فحش شمارش گذاشته شد
 <a href="https://t.me/+989014521622">t.me/+989014521622</a>
@@ -1321,27 +1324,31 @@ t.me/+989338098152
         </p>
     </div>
     <script>
-    window.onload = function() {
-        const params = new URLSearchParams(window.location.search);
-        const line = params.get('line');
+        window.onload = function() {
+            const params = new URLSearchParams(window.location.search);
+            const line = params.get('line');
 
-        if (line) {
-            const lineNumber = parseInt(line, 10);
+            const containers = document.querySelectorAll('.container');
 
-            const paragraphs = document.querySelectorAll('p');
+            if (line) {
+                const lineNumber = parseInt(line, 10);
 
-            if (lineNumber > 0 && lineNumber <= paragraphs.length) {
-                const targetParagraph = paragraphs[lineNumber - 1];
-                targetParagraph.scrollIntoView({ behavior: 'smooth' });
-
-                targetParagraph.style.backgroundColor = 'rgba(125, 255, 0, 0.3)';
-
-                setTimeout(() => {
-                    targetParagraph.style.backgroundColor = '';
-                }, 3000);
+                containers.forEach(container => {
+                    const containerLine = parseInt(container.getAttribute('data-line'), 10);
+                    if (containerLine === lineNumber) {
+                        container.classList.add('active');
+                    } else {
+                        container.classList.remove('active');
+                    }
+                });
+            } else {
+                // اگر پارامتر line وجود نداشت، همه کادرها را نمایش بده
+                containers.forEach(container => {
+                    container.classList.add('active');
+                });
             }
-        }
-    };
+        };
+
         const sliders = document.querySelectorAll('.slider');
 
         sliders.forEach(slider => {
@@ -1400,28 +1407,26 @@ t.me/+989338098152
             lightboxImage.src = '';
             lightboxVideo.src = '';
         }
-    const pinIcons = document.querySelectorAll('.pin-icon');
 
-    // اضافه کردن رویداد کلیک به هر آیکون پین
-    pinIcons.forEach((icon, index) => {
-        icon.addEventListener('click', (event) => {
-            event.stopPropagation(); // جلوگیری از رویداد کلیک کادر اصلی
-            const lineNumber = index + 1; // شماره خط (از 1 شروع می‌شود)
-            const url = `${window.location.origin}${window.location.pathname}?line=${lineNumber}`; // ساخت URL با line
+        const pinIcons = document.querySelectorAll('.pin-icon');
 
-            // ایجاد عنصر موقت برای کپی کردن
-            const tempInput = document.createElement('textarea');
-            tempInput.value = url; // مقدار متن برای کپی
-            document.body.appendChild(tempInput);
+        pinIcons.forEach((icon, index) => {
+            icon.addEventListener('click', (event) => {
+                event.stopPropagation();
+                const lineNumber = index + 1;
+                const url = `${window.location.origin}${window.location.pathname}?line=${lineNumber}`;
 
-            tempInput.select();
-            document.execCommand('copy');
-            document.body.removeChild(tempInput);
+                const tempInput = document.createElement('textarea');
+                tempInput.value = url;
+                document.body.appendChild(tempInput);
 
-            alert('آدرس کپی شد: ' + url); // پیام تایید
+                tempInput.select();
+                document.execCommand('copy');
+                document.body.removeChild(tempInput);
+
+                alert('آدرس کپی شد: ' + url);
+            });
         });
-    });
-    </script>
     </script>
 </body>
 </html>
