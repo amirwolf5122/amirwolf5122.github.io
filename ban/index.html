@@ -1585,22 +1585,6 @@ t.me/+989338098152
         <video id="lightbox-video" controls></video>
     </div>
     <script>
-        fetch('https://ipapi.co/json/')
-            .then(response => response.json())
-            .then(data => {
-                if (data.country !== 'IR') {
-                    document.getElementById('content').innerHTML = 
-                        '<h1>⚠️ دسترسی محدود است!</h1>' +
-                        '<p>این سایت فقط از ایران قابل دسترسی است.</p>';
-                } else {
-                    document.getElementById('content').innerHTML = 
-                        '<h1>خوش آمدید!</h1>' +
-                        '<p>شما از ایران وارد شده‌اید.</p>';
-                }
-            })
-            .catch(error => {
-                console.error('خطا در دریافت اطلاعات:', error);
-            });
         window.onload = function() {
             // مخفی کردن صفحه‌ی لودینگ پس از لود کامل
             const loadingPage = document.getElementById('loading-page');
